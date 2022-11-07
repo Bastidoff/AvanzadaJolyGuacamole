@@ -1,0 +1,11 @@
+extends ../layouts/index
+
+block formulario 
+    form(class='formulario' id="formulario" action="/registroCliente" method="POST")
+        input(class="inputs" id="nombre" name="nombre" placeholder="NOMBRE" type="text")
+        input(class="inputs" id="apellido" name="apellido" placeholder="APELLIDO" type="text")
+        input(class="inputs" id="documento" name="documento" placeholder="DOCUMENTO" type="text")
+        input(class="inputs" id="correo" name="correo" placeholder="CORREO" type="text")
+        input(class="inputs" id="direccion" name="direccion" placeholder="DIRECCIÓN" type="text")
+        input(class="inputs" id="telefono" name="telefono" placeholder="TELÉFONO" type="text")
+        input(class="boton" id="btnGuardar" value="GUARDAR" type="SUBMIT")

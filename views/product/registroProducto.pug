@@ -1,0 +1,10 @@
+extends ../layouts/index
+
+block formulario 
+    form(class='formulario' action="/registroProducto" method="POST")
+        input(class="inputs" id="nombre" name="nombre" placeholder="NOMBRE" type="text")
+        input(class="inputs" id="precio" name="precio" placeholder="PRECIO" type="text")
+        input(class="inputs" id="referencia" name="referencia" placeholder="REFERENCIA" type="text")
+        input(class="inputs" id="cantidad" name="cantidad" placeholder="CANTIDAD" type="text")
+        input(class="inputs" id="descripcion" name="descripcion" placeholder="DESCRIPCIÓN" type="text")
+        input(class="boton" id="btnGuardar" value="GUARDAR" type="SUBMIT")

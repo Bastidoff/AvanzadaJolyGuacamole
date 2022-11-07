@@ -1,0 +1,29 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Joly Guacamoly | #{nombreVista}
+        style 
+            include ../css/style.css
+    body
+        div.container
+            div.menu 
+                div.logo
+                    img(src="https://firebasestorage.googleapis.com/v0/b/jolyguacamoly-2a016.appspot.com/o/Logo.png?alt=media&token=5129eea8-f05f-4f7b-8872-d9d7a22064e2", alt="imagen del logo")
+
+                div.buttons
+                    form(action="/registroCliente")
+                        input(class="botonMenu" type="submit" value="CLIENTES")
+            
+                    form(action="/registroProducto")
+                        input(class="botonMenu" type="submit" value="PRODUCTOS")
+                
+                div.footer
+                    p DERECHOS RESERVADOS © 
+                    p DANIEL OSPINA QUICENO
+                            
+            div  
+                main 
+                    block formulario
